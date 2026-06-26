@@ -1,0 +1,17 @@
+
+ETAPA 1 
+
+
+Prompt:
+
+"¿Puedes explicarme brevemente dónde se aplican los conceptos de estado (useState) 
+y props en una aplicación React que filtra una lista de elementos"
+
+Evaluación de la sugerencia:
+La sugerencia fue útil. Me entregó una explicación técnica clara que me ayudó a recordar 
+cómo interactúan ambos elementos en el flujo de información.
+
+Modificaciones realizadas:
+Utilicé la explicación como base para redactar completamente con mis propias palabras
+el archivo ANALISIS.md, aterrizando los ejemplos específicamente a los componentes 
+y datos requeridos por la problemática de AdoptaPet.
