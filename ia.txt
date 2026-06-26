@@ -43,3 +43,19 @@ de cada mascota al componente hijo.
 
 Modificaciones realizadas:
 no realice ninguna modificacion 
+
+
+ETAPA 4 
+
+Prompt:
+"¿Cómo puedo hacer un input controlado en React para un buscador y normalizar el texto
+recortándolo a 30 caracteres para hacer un filtro seguro?"
+
+Evaluación de la sugerencia:
+Útil. Me entregó la lógica base para conectar el input con el estado mediante el evento
+onChange y me recordó el uso del método substring(0, 30) para limitar los caracteres.
+
+Modificaciones realizadas:
+Realicé modificaciones menores de integración, cambié los nombres genéricos de las variables 
+por los que uso en mi proyecto (busqueda, setBusqueda, filtro), y agregué los estilos visuales
+en línea (padding, márgenes y colores) para que el componente se viera ordenado.
