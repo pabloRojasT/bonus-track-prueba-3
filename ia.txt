@@ -15,3 +15,18 @@ Modificaciones realizadas:
 Utilicé la explicación como base para redactar completamente con mis propias palabras
 el archivo ANALISIS.md, aterrizando los ejemplos específicamente a los componentes 
 y datos requeridos por la problemática de AdoptaPet.
+
+
+ETAPA 2 
+
+
+Prompt:
+"Genera la sintaxis correcta de PropTypes en React para validar un array de strings y una
+propiedad que solo puede aceptar los valores 'Perro', 'Gato' u 'Otro'."
+
+Evaluación de la sugerencia:
+La sugerencia fue totalmente útil. Me proporcionó exactamente la sintaxis de PropTypes.arrayOf 
+y PropTypes.oneOf que necesitaba para asegurar que el componente reciba los datos correctamente.
+
+Modificaciones realizadas:
+no se realizo Modificaciones
