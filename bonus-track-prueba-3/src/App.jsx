@@ -1,12 +1,12 @@
 import { mascotas } from './data/mascotas';
+import ListaMascotas from './components/ListaMascotas';
 
 function App() {
-  // Verificamos en consola que el array carga correctamente
-  console.log("Datos cargados:", mascotas);
-
   return (
-    <div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
       <h1>AdoptaPet - Directorio de Mascotas</h1>
+      {/* Renderizamos ListaMascotas pasándole los datos importados por props  */}
+      <ListaMascotas mascotas={mascotas} />
     </div>
   );
 }

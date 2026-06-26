@@ -30,3 +30,16 @@ y PropTypes.oneOf que necesitaba para asegurar que el componente reciba los dato
 
 Modificaciones realizadas:
 no se realizo Modificaciones
+
+ETAPA 3 
+
+Prompt:
+"Genera un componente en React llamado ListaMascotas que reciba un array por props y use .map() 
+para renderizar el componente MascotaCard. Recuerda incluir la prop key."
+
+Evaluación de la sugerencia:
+Útil. Me estructuró correctamente el ciclo .map() y me recordó la importancia de pasar las props
+de cada mascota al componente hijo.
+
+Modificaciones realizadas:
+no realice ninguna modificacion 
