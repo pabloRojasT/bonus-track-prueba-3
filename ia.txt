@@ -29,7 +29,8 @@ La sugerencia fue totalmente útil. Me proporcionó exactamente la sintaxis de P
 y PropTypes.oneOf que necesitaba para asegurar que el componente reciba los datos correctamente.
 
 Modificaciones realizadas:
-no se realizo Modificaciones
+Adapté los nombres de las variables sugeridas por la IA a los nombres exactos que vienen en mi archivo mascotas.js (especie y caracteristicas) y agregué valores por defecto directamente
+en los parámetros del componente para cumplir con las normas de desarrollo seguro.
 
 ETAPA 3 
 
@@ -42,7 +43,8 @@ Evaluación de la sugerencia:
 de cada mascota al componente hijo.
 
 Modificaciones realizadas:
-no realice ninguna modificacion 
+Asigné explícitamente key={mascota.id} tal como pide la pauta en lugar de usar el index del arreglo,
+y agregué la validación de PropTypes para la prop mascotas. 
 
 
 ETAPA 4 
@@ -59,3 +61,22 @@ Modificaciones realizadas:
 Realicé modificaciones menores de integración, cambié los nombres genéricos de las variables 
 por los que uso en mi proyecto (busqueda, setBusqueda, filtro), y agregué los estilos visuales
 en línea (padding, márgenes y colores) para que el componente se viera ordenado.
+
+
+
+ETAPA 5 
+
+
+Prompt:
+"¿Cómo puedo condicionar el estilo de un borde en un componente de React basándome 
+en un valor booleano 'adopcionUrgente' y cómo calculo de forma eficiente el total de
+ elementos que cumplen esa condición para un contador?"
+
+Evaluación de la sugerencia:
+Útil. Me dio la estructura para aplicar un operador ternario directamente 
+en la propiedad border del estilo y me sugirió usar el método .filter().length.
+
+Modificaciones realizadas:
+Solo modifiqué el color rojo que sugirió la IA por un tono específico (#dc2626) 
+y ajusté el texto de la etiqueta para que dijera exactamente "¡ADOPCIÓN URGENTE!" 
+como lo pedía la problemática.

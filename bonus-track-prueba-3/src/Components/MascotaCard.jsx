@@ -6,10 +6,10 @@ const MascotaCard = ({
   edad = 0,
   especie = "Otro",
   descripcion = "Sin información.",
-  caracteristicas = []
+  caracteristicas = [],
+  adopcionUrgente = false // Nueva prop
 }) => {
   
-  // Función para determinar el color de fondo según la especie
   const obtenerEstiloEspecie = () => {
     switch (especie) {
       case 'Perro': return { backgroundColor: '#e0f2fe', border: '1px solid #7dd3fc' }; 
@@ -18,8 +18,12 @@ const MascotaCard = ({
     }
   };
 
+  // Renderizado condicional para el borde: rojo si es urgente 
+  const bordeUrgente = adopcionUrgente ? '3px solid #dc2626' : obtenerEstiloEspecie().border;
+
   const cardStyle = {
     ...obtenerEstiloEspecie(),
+    border: bordeUrgente,
     padding: '1rem',
     borderRadius: '8px',
     marginBottom: '1rem',
@@ -28,6 +32,12 @@ const MascotaCard = ({
 
   return (
     <div style={cardStyle}>
+      {/* Etiqueta condicional para destacar la adopción urgente  */}
+      {adopcionUrgente && (
+        <span style={{ backgroundColor: '#dc2626', color: 'white', padding: '4px 8px', borderRadius: '4px', fontWeight: 'bold', fontSize: '0.8rem', display: 'inline-block', marginBottom: '10px' }}>
+          ¡ADOPCIÓN URGENTE!
+        </span>
+      )}
       <h3>{nombre}</h3>
       <p><strong>Especie:</strong> {especie}</p>
       <p><strong>Raza:</strong> {raza}</p>
@@ -45,14 +55,14 @@ const MascotaCard = ({
   );
 };
 
-// Validación de tipos obligatoria según la rúbrica
 MascotaCard.propTypes = {
   nombre: PropTypes.string,
   raza: PropTypes.string,
   edad: PropTypes.number,
   especie: PropTypes.oneOf(['Perro', 'Gato', 'Otro']),
   descripcion: PropTypes.string,
-  caracteristicas: PropTypes.arrayOf(PropTypes.string)
+  caracteristicas: PropTypes.arrayOf(PropTypes.string),
+  adopcionUrgente: PropTypes.bool // Validación de la nueva prop
 };
 
 export default MascotaCard;

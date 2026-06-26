@@ -1,16 +1,17 @@
-# React + Vite
+# AdoptaPet - Directorio de Mascotas
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Estudiante: Pablo Ignacio Rojas Tapia
 
-Currently, two official plugins are available:
+## Descripción
+Aplicación web SPA desarrollada en React para un refugio de animales. Funciona como un directorio digital interactivo que permite visualizar las mascotas disponibles, filtrar la lista por nombre y especie de forma segura, y destacar visualmente aquellos casos que requieren adopción urgente mediante etiquetas y un contador.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Instrucciones para ejecutar localmente
 
-## React Compiler
+1. Clona este repositorio en tu máquina local.
+2. Abre la carpeta del proyecto (`bonus-track-prueba-3`) en tu terminal.
+3. Ejecuta el comando `npm install` para descargar todas las dependencias necesarias.
+4. Ejecuta el comando `npm run dev` para iniciar el servidor de desarrollo.
+5. Abre la dirección web que indica la terminal (por defecto es `http://localhost:5173/`) en tu navegador.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Declaración del uso de GitHub Copilot
+Se declara que durante el desarrollo de esta evaluación sumativa se utilizó la extensión GitHub Copilot Chat y los prompts que se utilizaron se encuentra documentado en el archivo `ia.txt` adjunto en este repositorio.
